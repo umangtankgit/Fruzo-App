@@ -23,8 +23,13 @@ const userSessions = {};
 const phoneToChatId = {}; // 🚀 NEW: Maps real phone number to WhatsApp's Random LID for Delivery Notifications
 
 const client = new Client({
-    authStrategy: new LocalAuth(),
-    puppeteer: { args: ['--no-sandbox', '--disable-setuid-sandbox'], headless: true }
+    puppeteer: {
+        args: [
+            '--no-sandbox', 
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage'
+        ]
+    }
 });
 
 client.on('qr', (qr) => {

@@ -16,9 +16,13 @@ import { startWhatsAppBot } from './whatsappBot.js';
 import weatherRouter from './routes/weatherRoute.js';
 import clearanceRouter from './routes/clearanceRoute.js';
 import settingsRouter from './routes/settingsRoute.js';
-
+import cors from 'cors';
+app.use(cors({ origin: "*" })); // Ye sabko allow kar dega
 const app = express();
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 
 await connectDB();
 await connectCloudinary();
