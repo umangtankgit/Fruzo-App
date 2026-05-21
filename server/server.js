@@ -21,8 +21,8 @@ import settingsRouter from './routes/settingsRoute.js';
 
 const app = express();
 app.use(cors({
-    origin: ["https://fruzo-app.vercel.app", "http://localhost:5173"],
-    credentials: true 
+    origin: (origin, callback) => callback(null, true),
+    credentials: true
 }));
 const PORT = process.env.PORT || 4000;
 
