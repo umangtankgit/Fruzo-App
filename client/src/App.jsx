@@ -27,7 +27,8 @@ import BulkPricing from './pages/seller/BulkPricing';
 import PredictiveSourcing from './pages/seller/PredictiveSourcing';
 import FlashClearance from './pages/seller/FlashClearance';
 import StoreStatusBanner from './components/StoreStatusBanner'; // 🚀 IMPORTED BANNER
-
+import axios from 'axios';
+axios.defaults.withCredentials = true;
 const App = () => {
 
   const isSellerPath = useLocation().pathname.includes("seller");
