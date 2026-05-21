@@ -8,7 +8,7 @@ const StoreStatusBanner = () => {
         const fetchStatus = async () => {
             try {
                 // Adjust port if your backend runs differently
-                const { data } = await axios.get('http://localhost:4000/api/settings/status');
+               const { data } = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/settings/status`);
                 if (data.success) {
                     setIsStoreOpen(data.isStoreOpen);
                     // Save to local storage so Cart.jsx can instantly read it

@@ -13,7 +13,7 @@ const FlashClearance = () => {
     const fetchAgingInventory = async () => {
         setLoading(true);
         try {
-            const { data } = await axios.get(`http://localhost:4000/api/clearance/aging?thresholdDays=${thresholdDays}`);
+           const { data } = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/clearance/aging?thresholdDays=${thresholdDays}`);
             if (data.success) {
                 setAgingProducts(data.products);
             } else {
@@ -37,7 +37,7 @@ const FlashClearance = () => {
 
         try {
             setLoading(true);
-            const { data } = await axios.post('http://localhost:4000/api/clearance/trigger', {
+            const { data } = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/clearance/trigger`, {
                 thresholdDays: thresholdDays,
                 discountPercentage: discountParams
             });

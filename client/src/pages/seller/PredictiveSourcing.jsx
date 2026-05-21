@@ -9,7 +9,7 @@ const PredictiveSourcing = () => {
     const fetchPredictionData = async () => {
         setLoading(true);
         try {
-            const response = await axios.get('http://localhost:4000/api/weather/predict');
+            const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/weather/predict`);
             if (response.data.success) {
                 setData(response.data);
             } else {
