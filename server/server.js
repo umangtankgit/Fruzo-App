@@ -58,13 +58,22 @@ app.use('/api/clearance', clearanceRouter);
 app.use('/api/settings', settingsRouter);
 
 // ==========================================
-// START WHATSAPP BOT
-// ==========================================
-startWhatsAppBot();
-
-// ==========================================
-// START EXPRESS SERVER (ALWAYS AT THE END)
+// START EXPRESS SERVER FIRST (Fast Startup)
 // ==========================================
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+
+    // ==========================================
+    // DELAY WHATSAPP BOT (Prevents RAM Crash)
+    // ==========================================
+    console.log("Waiting 10 seconds before starting WhatsApp Bot to save memory...");
+    
+    setTimeout(() => {
+        try {
+            console.log("WhatsApp Bot Initializing...");
+            startWhatsAppBot();
+        } catch (error) {
+            console.log("Bot Start Error:", error);
+        }
+    }, 10000); // 10 seconds delay
 });
