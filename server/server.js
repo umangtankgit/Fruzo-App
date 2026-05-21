@@ -18,11 +18,12 @@ import clearanceRouter from './routes/clearanceRoute.js';
 import settingsRouter from './routes/settingsRoute.js';
 
 // Isko apne server.js mein cors import ke niche daalo
+
+const app = express();
 app.use(cors({
     origin: ["https://fruzo-app.vercel.app", "http://localhost:5173"],
     credentials: true 
 }));
-const app = express();
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
