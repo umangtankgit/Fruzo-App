@@ -1,0 +1,15 @@
+2026/05/21-03:13:45.110 5f30 Reusing MANIFEST C:\Users\Umang\OneDrive\Documents\Final Year Project\Fruzo\Fruzo\server\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2026/05/21-03:13:45.116 5f30 Recovering log #29
+2026/05/21-03:13:45.120 5f30 Reusing old log C:\Users\Umang\OneDrive\Documents\Final Year Project\Fruzo\Fruzo\server\.wwebjs_auth\session\Default\Local Storage\leveldb/000029.log 
+2026/05/21-07:45:07.186 21dc Level-0 table #33: started
+2026/05/21-07:45:07.202 21dc Level-0 table #33: 16449 bytes OK
+2026/05/21-07:45:07.205 21dc Delete type=0 #29
+2026/05/21-07:45:07.206 21dc Compacting 4@0 + 1@1 files
+2026/05/21-07:45:07.211 21dc Generated table #34@0: 295 keys, 16580 bytes
+2026/05/21-07:45:07.211 21dc Compacted 4@0 + 1@1 files => 16580 bytes
+2026/05/21-07:45:07.211 21dc compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/21-07:45:07.212 21dc Delete type=2 #21
+2026/05/21-07:45:07.212 21dc Delete type=2 #24
+2026/05/21-07:45:07.212 21dc Delete type=2 #26
+2026/05/21-07:45:07.212 21dc Delete type=2 #30
+2026/05/21-07:45:07.212 21dc Delete type=2 #33

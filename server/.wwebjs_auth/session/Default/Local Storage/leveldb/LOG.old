@@ -1,0 +1,6 @@
+2026/05/21-03:13:09.788 2b0c Reusing MANIFEST C:\Users\Umang\OneDrive\Documents\Final Year Project\Fruzo\Fruzo\server\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2026/05/21-03:13:09.802 2b0c Recovering log #27
+2026/05/21-03:13:09.815 2b0c Reusing old log C:\Users\Umang\OneDrive\Documents\Final Year Project\Fruzo\Fruzo\server\.wwebjs_auth\session\Default\Local Storage\leveldb/000027.log 
+2026/05/21-03:13:31.616 5798 Level-0 table #30: started
+2026/05/21-03:13:31.625 5798 Level-0 table #30: 15785 bytes OK
+2026/05/21-03:13:31.628 5798 Delete type=0 #27
